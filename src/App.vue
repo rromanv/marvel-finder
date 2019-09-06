@@ -1,33 +1,27 @@
 <template>
   <v-app>
-    <v-app-bar app>
+    <v-app-bar app dark class="green darken-2">
       <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
+        <span>Marvel</span>
+        <span class="font-weight-light">Finder</span>
       </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn
-        text
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
     </v-app-bar>
 
-    <v-content>
-      <router-view/>
+    <v-content class="grey darken-3 white--text">
+      <router-view />
     </v-content>
+    <v-footer class="green darken-2 white--text">
+      <div class="flex-grow-1"></div>
+      <div>&copy; {{ new Date().getFullYear() }}</div>
+    </v-footer>
   </v-app>
 </template>
 
 <script>
-
 export default {
-  name: 'App',
+  name: "App",
   data: () => ({
     //
-  }),
+  })
 };
 </script>
